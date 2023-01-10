@@ -1,0 +1,102 @@
+:root {
+  /* colors */
+  --clr-page-bg: #eaeaea;
+  --clr-recipe-bg: #fff;
+  --clr-title: #1b1b1b;
+  --clr-subtitle: #8f8f8f;
+  --clr-text: #39393a;
+
+  /* font sizes */
+  --fs-primary-title: 1.75em;
+  --fs-secondary-title: 1.25em;
+  --fs-subtitle: 0.75em;
+
+  /* line height */
+  --lh-recipe-list: 1.5em;
+}
+
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background: var(--clr-page-bg);
+}
+
+h1,
+h2 {
+  color: var(--clr-title);
+  font-weight: 550;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  padding: 5rem 0 0.8rem 0;
+  color: var(--clr-title);
+  font-size: var(--fs-primary-title);
+}
+
+h2 {
+  font-size: var(--fs-secondary-title);
+  margin: 1.8rem auto;
+}
+
+li {
+  color: var(--clr-text);
+  margin-bottom: 1.5rem;
+}
+
+main {
+  background: var(--clr-recipe-bg);
+  width: min(90%, 50rem);
+  margin: 3em auto;
+  border-radius: 10px;
+  padding-block: 2.5rem;
+}
+
+figure {
+  width: 90%;
+  height: 230px;
+  margin: 1rem auto 3.5rem auto;
+}
+
+figcaption {
+  color: var(--clr-subtitle);
+  font-size: var(--fs-subtitle);
+  text-align: end;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: 10px;
+}
+
+section {
+  width: calc(90% - 2.1rem);
+  margin-inline: auto;
+}
+
+.additional-info {
+  line-height: var(--lh-recipe-list);
+  width: 90%;
+}
+
+.additional-info p {
+  margin-bottom: 1.5rem;
+}
+
+#copyright-name {
+  text-align: center;
+  padding-block: 0.4rem;
+}
